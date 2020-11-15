@@ -7,8 +7,22 @@ $(function(){
   })
   
 
+$("#button01").on("click",function(){
+  let students_tet = "";
 
+  for(let i=0; i<students.length; i++){
+    students_txt += students[i]
+    students_txt +='/'
+  }
 
-
-
+  $("#content").students_txt(students_txt);
 })
+
+$("#button02").text(students_txt);
+})
+
+for(let i=0; i<students.length; i++){
+  students_txt += "<div id='student" + i +"' class='student7>" + students[i] +
+  "</div>"
+}
+$("#content").html(students_txt);
